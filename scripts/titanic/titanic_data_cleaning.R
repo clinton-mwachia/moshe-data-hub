@@ -11,3 +11,15 @@ str(titanic)
 
 # summary of data
 summary(titanic)
+
+# length of data
+titanic %>%
+  nrow()
+
+# calculate percentage of NAs per column
+titanic %>%
+  summarise(across(everything(), ~ mean(is.na(.)) * 100))
+
+# total NAs per column
+titanic %>%
+  summarise(across(everything(), ~ sum(is.na(.))))
