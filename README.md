@@ -35,7 +35,9 @@ AfricaDataHub-R/
 │   ├── data_collection/
 │   ├── data_cleaning/
 │   ├── feature_engineering/
-│   └── modeling/
+|   ├── EDA/
+|   ├── modelling/
+│   └── report/
 │
 ├── notebooks/              # Exploratory data analysis
 ├── dashboards/             # Shiny interactive dashboards
