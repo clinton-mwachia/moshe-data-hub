@@ -1,488 +1,218 @@
 # Africa Data Hub in R
 
-An open, reproducible **data science platform focused on African datasets**, built using **R**.
-The goal of this project is to make African data **accessible, analyzable, and visualized** for researchers, developers, journalists, policymakers, and students.
+**Africa Data Hub-R** is a **research-grade, professional data science portfolio** built entirely in **R**.  
+It provides curated datasets, reproducible analysis pipelines, statistical modeling, machine learning workflows, high-quality visualizations, interactive dashboards, and research-grade reports.
 
-The repository contains **curated datasets, data cleaning pipelines, statistical analyses, machine learning models, and interactive dashboards** focused on Africa.
-
----
-
-# 🌍 Project Vision
-
-Africa has large volumes of public data spread across many organizations.
-However, most datasets are:
-
-* difficult to access
-* inconsistently formatted
-* not analysis-ready
-
-**Africa Data Hub in R** solves this by providing:
-
-* Clean and structured datasets
-* Reproducible analysis pipelines
-* Visualization and dashboards
-* Machine learning examples
-* Open-source collaboration
+The goal of this repository is to **demonstrate expertise in data science, analysis, visualization, and reporting** by creating fully reproducible projects using high-quality, citable datasets.
 
 ---
 
-# 🎯 Objectives
+## 🎯 Portfolio Objectives
 
-The project aims to:
+Each project in this portfolio demonstrates:
 
-* Centralize African open datasets
-* Provide reproducible data analysis workflows
-* Build interactive dashboards
-* Encourage open data collaboration
-* Enable research and policy insights
-* Support data-driven decision making across Africa
+1. **Data Acquisition** – Collecting high-quality, citable datasets  
+2. **Reproducible Pipelines**
+3. **Data Cleaning & Pre-processing** – Scripts for reproducible transformation  
+4. **Exploratory Data Analysis** – Summary statistics and visualizations  
+5. **Advanced Modeling** – Statistical models, ML models, time-series forecasting  
+6. **High-Quality Visualizations** – Static (`ggplot2`) and interactive (`plotly`, `leaflet`)  
+7. **Interactive Dashboards** – Shiny apps for stakeholder-friendly exploration  
+8. **Research-Grade Reports** – RMarkdown reports with methodology, results, and references  
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
-```
-africa-data-hub/
+```text
+AfricaDataHub-R/
 │
-├── data
-│   ├── raw/                # Original downloaded datasets
-│   └── cleaned/            # Processed datasets ready for analysis
+├── data/
+│   ├── raw/                # Original, citable datasets
+│   └── cleaned/            # Analysis-ready datasets
 │
-├── datasets
-│   ├── agriculture/
-│   ├── health/
-│   ├── economics/
-│   ├── education/
-│   ├── climate/
-│   └── demographics/
-│
-├── scripts
+├── scripts/
 │   ├── data_collection/
 │   ├── data_cleaning/
 │   ├── feature_engineering/
 │   └── modeling/
 │
-├── dashboards
-│   └── shiny_apps/
-│
-├── notebooks
-│   └── exploratory_analysis/
-│
-├── reports
-│   └── rmarkdown/
-│
-├── visualizations
-│
-├── models
-│
-├── docs
-│
+├── notebooks/              # Exploratory data analysis
+├── dashboards/             # Shiny interactive dashboards
+├── reports/                # RMarkdown research reports
+├── visualizations/         # High-quality plots and charts
+├── models/                 # Trained ML or statistical models
+├── docs/                   # Documentation, roadmap
 └── README.md
-```
+````
 
 ---
 
-# 📊 Data Categories
+## 📊 Example Projects
 
-The project contains datasets organized into the following categories.
+### 1. African Agriculture Analytics
 
-## Agriculture
+* **Datasets:** FAO crop yields, rainfall, soil data
+* **Analysis:** Crop yield prediction, climate impact modeling
+* **Dashboard:** Interactive country/year filterable dashboard
+* **Report:** Research-grade insights on food security trends
 
-Examples:
+### 2. Disease Trends in Africa
 
-* crop yield statistics
-* fertilizer usage
-* livestock populations
-* agricultural exports
+* **Datasets:** WHO malaria, HIV, vaccination data
+* **Analysis:** Seasonal trend analysis, forecasting outbreaks
+* **Dashboard:** Interactive maps with disease hotspots
+* **Report:** Insights for health policy and intervention
 
-Example analysis:
+### 3. African Economic Dashboard
 
-* crop yield prediction
-* drought impact analysis
-* food security trends
+* **Datasets:** World Bank GDP, inflation, trade data
+* **Analysis:** Growth trends, country comparison
+* **Dashboard:** Interactive economic metrics exploration
+* **Report:** Country-level economic trend analysis
 
----
+### 4. Climate and Environmental Analysis
 
-## Health
+* **Datasets:** Rainfall, temperature, drought indices
+* **Analysis:** Climate change trends, extreme weather impact
+* **Dashboard:** Filterable interactive environmental dashboard
+* **Report:** Climate impact research paper
 
-Examples:
+### 5. Demographics & Urbanization
 
-* malaria statistics
-* vaccination coverage
-* HIV prevalence
-* healthcare infrastructure
-
-Example analysis:
-
-* disease trend analysis
-* seasonal outbreak detection
-* healthcare accessibility mapping
-
----
-
-## Economics
-
-Examples:
-
-* GDP growth
-* inflation rates
-* unemployment
-* trade statistics
-
-Example analysis:
-
-* economic growth comparison
-* trade pattern analysis
-* economic forecasting
+* **Datasets:** UN population, migration data
+* **Analysis:** Population growth, urbanization trends
+* **Dashboard:** Country and regional visualizations
+* **Report:** Demographic insights and projections
 
 ---
 
-## Climate
+## 🛠 Technologies & Libraries
 
-Examples:
-
-* rainfall data
-* temperature trends
-* drought indexes
-* climate variability
-
-Example analysis:
-
-* climate change trends
-* rainfall forecasting
-* agricultural climate impact
+* **R:** Core language for analysis
+* **Data Wrangling:** `tidyverse`, `data.table`
+* **Visualization:** `ggplot2`, `plotly`, `leaflet`, `sf`
+* **Modeling:** `tidymodels`, `caret`, `xgboost`
+* **Dashboards:** `shiny`
+* **Reproducible Pipelines:** `targets`, `renv`
+* **Reporting:** `rmarkdown`
 
 ---
 
-## Demographics
+## 🚀 Getting Started
 
-Examples:
+1. **Clone the repository**
 
-* population growth
-* urbanization rates
-* migration patterns
-* age distributions
-
-Example analysis:
-
-* urbanization trends
-* demographic transition analysis
-
----
-
-# 📈 Example Analyses
-
-This repository includes multiple real-world analyses.
-
-Examples:
-
-## Election Data Analysis
-
-* voter turnout trends
-* regional voting patterns
-* election visualization maps
-
----
-
-## Agricultural Productivity Analysis
-
-* crop yield trends
-* rainfall vs productivity
-* food security insights
-
----
-
-## Disease Forecasting
-
-Using time-series models to predict disease trends.
-
-Example methods:
-
-* ARIMA models
-* seasonal decomposition
-* forecasting models
-
----
-
-## Economic Growth Analysis
-
-Comparative economic analysis across African countries.
-
-Metrics:
-
-* GDP per capita
-* inflation
-* growth rate
-
----
-
-# 📊 Visualizations
-
-The project includes multiple visualization types.
-
-Examples:
-
-* country-level maps
-* time series charts
-* economic trend graphs
-* climate heatmaps
-* demographic charts
-
-Tools used:
-
-* ggplot2
-* plotly
-* leaflet
-* sf
-
----
-
-# 📊 Dashboards
-
-Interactive dashboards are built using **Shiny**.
-
-Dashboard examples include:
-
-* Africa Economic Dashboard
-* Disease Surveillance Dashboard
-* Agriculture Analytics Dashboard
-* Climate Trends Dashboard
-
----
-
-# 🤖 Machine Learning
-
-Example models included in the project:
-
-* crop yield prediction
-* disease forecasting
-* economic trend prediction
-* housing price modeling
-
-Libraries used:
-
-* tidymodels
-* caret
-* randomForest
-* xgboost
-
----
-
-# ⚙️ Tech Stack
-
-Main technologies used in the project.
-
-### Language
-
-* R
-
-### Data Science Libraries
-
-* tidyverse
-* data.table
-* ggplot2
-* tidymodels
-* caret
-
-### Visualization
-
-* ggplot2
-* plotly
-* leaflet
-* sf
-
-### Dashboards
-
-* Shiny
-
-### Reporting
-
-* RMarkdown
-
-### Data Pipelines
-
-* targets
-
----
-
-# 🚀 Getting Started
-
-## 1. Clone the repository
-
-```
-git clone https://github.com/clinton-mwachia/africa-data-hub.git
+```bash
+git clone https://github.com/clinton-mwachia/africa-data-hub-R.git
 cd africa-data-hub
 ```
 
----
+2. **Install required R packages**
 
-## 2. Install required packages
-
-```
+```r
 install.packages(c(
-  "tidyverse",
-  "data.table",
-  "ggplot2",
-  "tidymodels",
-  "caret",
-  "plotly",
-  "leaflet",
-  "sf",
-  "shiny",
-  "targets"
+  "tidyverse", "data.table", "ggplot2", "plotly",
+  "sf", "leaflet", "tidymodels", "caret", "xgboost",
+  "shiny", "rmarkdown", "targets", "renv"
 ))
 ```
 
----
+3. **Run the data cleaning pipeline**
 
-## 3. Run data cleaning pipeline
-
-```
+```r
 source("scripts/data_cleaning/clean_data.R")
 ```
 
----
+4. **Run modeling scripts**
 
-## 4. Run analysis scripts
-
-```
+```r
 source("scripts/modeling/train_models.R")
 ```
 
----
+5. **Launch dashboards**
 
-## 5. Launch dashboard
-
-```
+```r
 shiny::runApp("dashboards/shiny_apps/")
 ```
 
 ---
 
-# 🔄 Data Pipeline
-
-The project uses reproducible pipelines.
-
-Workflow:
+## 🔄 Reproducible Workflow
 
 ```
-Data collection
-      ↓
-Data cleaning
-      ↓
-Feature engineering
-      ↓
-Statistical analysis
-      ↓
-Model training
-      ↓
-Visualization
-      ↓
-Reports and dashboards
+Data Collection → Data Cleaning → Feature Engineering → EDA → Modeling → Visualization → Dashboards → Research Report
 ```
+
+All projects are **fully reproducible**.
 
 ---
 
-# 📚 Data Sources
+## 📚 Data Sources
 
-Datasets are sourced from reputable public organizations including:
+Datasets are sourced from **high-quality, citable sources**, such as:
 
 * World Bank
-* African Development Bank
 * FAO
 * WHO
-* UN Data Portal
+* UN Data
+* African Development Bank
 * Government open data portals
 
-All datasets include proper attribution.
+All datasets include source, URL, and versioning information for reproducibility.
 
 ---
 
-# 🤝 Contributing
+## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome:
 
-Ways to contribute:
+* Add datasets or projects
+* Improve pipelines, models, visualizations
+* Build new dashboards
+* Add research-grade reports
 
-* add new datasets
-* improve data cleaning pipelines
-* create dashboards
-* improve documentation
-* add machine learning models
-
-### Contribution steps
+**Steps to contribute:**
 
 1. Fork the repository
-2. Create a new branch
-
-```
-git checkout -b feature-name
-```
-
-3. Commit changes
-
-```
-git commit -m "Add new dataset"
-```
-
-4. Push to your fork
-
-```
-git push origin feature-name
-```
-
+2. Create a feature branch (`git checkout -b feature-name`)
+3. Commit changes (`git commit -m "Add feature"`)
+4. Push branch (`git push origin feature-name`)
 5. Submit a Pull Request
 
 ---
 
-# 📜 License
+## 📜 License
 
-This project is released under the **MIT License**.
-
-You are free to:
-
-* use
-* modify
-* distribute
-* contribute
+MIT License – free to use, modify, distribute, and contribute.
 
 ---
 
-# 👤 Author
-
-Created and maintained by:
+## 👤 Author
 
 **Clinton Moshe**
-
 Data Scientist | Software Engineer
 
-Website
-[https://moshecrafts.com](https://moshecrafts.com)
+Website: [https://moshecrafts.com](https://moshecrafts.com)
 
-GitHub
-[https://github.com/clinton-mwachia](https://github.com/clinton-mwachia)
+GitHub: [https://github.com/clinton-mwachia](https://github.com/clinton-mwachia)
 
 ---
 
-# 🌍 Future Roadmap
+## 🌟 Future Roadmap
 
-Planned future improvements:
-
-* R package for African datasets
-* public API for datasets
-* automated data ingestion
-* additional dashboards
-* machine learning benchmarks
-* real-time data feeds
+* Create `africadata` R package for easy dataset access
+* Public API to serve datasets and dashboards
+* Additional ML models and benchmarking
+* Automated data ingestion for real-time datasets
+* Publish research papers based on project insights
 
 ---
 
-# ⭐ Support the Project
+## ⭐ Support the Project
 
-If you find this project useful:
+* ⭐ Star the repo
+* 🍴 Fork and contribute
+* 📢 Share with other researchers, data scientists, and policymakers
 
-* ⭐ Star the repository
-* 🍴 Fork the project
-* 🤝 Contribute datasets or analyses
-
-Together we can build a powerful **open data ecosystem for Africa**.
+Together we can build a **research-grade open data ecosystem for Africa**.
