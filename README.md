@@ -1,6 +1,6 @@
-# Africa Data Hub in R
+# Moshe Data Hub in R
 
-**Africa Data Hub-R** is a **research-grade, professional data science portfolio** built entirely in **R**.  
+**Moshe Data Hub-R** is a **research-grade, professional data science portfolio** built entirely in **R**.  
 It provides curated datasets, reproducible analysis pipelines, statistical modeling, machine learning workflows, high-quality visualizations, interactive dashboards, and research-grade reports.
 
 The goal of this repository is to **demonstrate expertise in data science, analysis, visualization, and reporting** by creating fully reproducible projects using high-quality, citable datasets.
